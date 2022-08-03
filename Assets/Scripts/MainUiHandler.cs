@@ -16,7 +16,7 @@ public class MainUiHandler : MonoBehaviour
     // Update is called once per frame
     void BestScoreUpdate()
     {
-        if (GameManager.BestPlayer == null) return;
-        bestScore.text = "Best score: " + GameManager.BestPlayer + ": " + GameManager.BestScore;
+        if (GameManager.bestPlayerData == null) return;
+        bestScore.text = "Best score: " + GameManager.bestPlayerData.BestPlayer + ": " + GameManager.bestPlayerData.BestScore;
     }
 }
